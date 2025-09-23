@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PaperBackground from "./components/PaperBackground";
+import localFont from "next/font/local";
+
+const sansCulottes = localFont({
+  src: "/fonts/SansCulottes/SansCulottes.ttf",
+  variable: "--font-culot",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${sansCulottes.variable} antialiased`}
       >
         {children}
+        <div className="bg-wrapper -z-1 top-0 left-0 fixed h-dvh w-dvw">
+          <PaperBackground />
+        </div>
       </body>
     </html>
   );
