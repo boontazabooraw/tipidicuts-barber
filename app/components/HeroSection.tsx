@@ -8,12 +8,12 @@ const HeroSection = () => {
       <div className="flex flex-col justify-center items-center h-full gap-7">
         <Image
           src={"/images/logos/tipidicuts-logo.png"}
-          alt="Stellar logo"
+          alt="Tipidicuts Barber Logo"
           sizes="100vw"
           width={500}
           height={500}
           quality={100}
-          className="md:w-[30%] w-[80%] h-auto opacity-80 saturate-200"
+          className="md:w-[30%] w-[80%] h-auto brightness-110"
         />
         <div className="flex flex-col gap-1">
           <h1 className="font-bold text-strong font-culot text-center text-4xl uppercase">

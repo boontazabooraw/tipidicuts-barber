@@ -2,8 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  
+  --foreground: #171717; 
 }
 
 @theme inline {
@@ -12,7 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-culot: var(--font-culot);
-  --color-strong: #454a59;
+  --color-strong: #22232f;
   --color-blu: #2da8f2;
   --color-rid: #f73d4f;
 }
@@ -21,7 +20,7 @@
 crm  #f2eee4
 
 gry2 #697075
-gry3 #454a59
+gry3 #22232f
 
 blu  #2da8f2
 rid  #f73d4f
@@ -45,6 +44,4 @@ body {
   z-index: 100;
   width: auto;
   height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
 }
