@@ -9,6 +9,7 @@ const PaperBackground = () => {
         src={"/images/bg/paper-bg.png"}
         alt="Background Image"
         fill
+        priority
         quality={100}
         className="opacity-80"
         style={{ objectFit: "cover" }}
