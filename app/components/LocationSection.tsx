@@ -1,10 +1,30 @@
 "use client";
 
+import { motion } from "motion/react";
+
 import Image from "next/image";
 
 const LocationSection = () => {
   return (
-    <div className="section-wrapper px-5 lg:px-60 md:px-20">
+    <motion.div
+      initial={{
+        opacity: "0%",
+        scaleY: "0%",
+      }}
+      whileInView={{
+        opacity: "100%",
+        scaleY: "100%",
+      }}
+      viewport={{
+        once: true,
+        margin: "-200px"
+      }}
+      transition={{
+        delay: 0.5,
+      }}
+      style={{ transformOrigin: "top" }}
+      className="section-wrapper px-5 lg:px-60 md:px-20"
+    >
       <div className="flex flex-col justify-center items-center h-full gap-7">
         <div className="flex flex-col gap-5">
           <h1 className="font-bold text-strong font-culot text-center text-5xl uppercase">
@@ -40,7 +60,7 @@ const LocationSection = () => {
           ></iframe>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
